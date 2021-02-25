@@ -1,5 +1,13 @@
 ## bloatware list Samsung S21
 
+## TL:DR
+You want to debloat your phone, without reading the README file, and use straight away some *awesome* `commands` with `adb`.
+### NOTE:
+- Use of this bloatwarelist is always and everywhere on your own risk.
+- This is not an advice, nor a financial advice.
+- Feedback and donations are more then welcome.
+- I like drinking beer.
+
 ### prerequirements
 1.  `adb` is installed.
 2.  Phone is enabled in *develop settings*.
