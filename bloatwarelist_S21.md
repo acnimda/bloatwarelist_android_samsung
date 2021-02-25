@@ -13,11 +13,6 @@ You want to debloat your *brand new* android phone, without reading the README f
 2.  Phone is enabled in *develop settings*.
 3. *usb-debugging* is enabled.
 
-## search packages
-
-
-
-
 ## packages sort
 
 ### facebook
