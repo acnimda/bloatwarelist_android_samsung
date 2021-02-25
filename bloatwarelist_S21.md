@@ -5,7 +5,7 @@ You want to debloat your *brand new* android phone, without reading the README f
 ### NOTE:
 - Use of this bloatwarelist is always and everywhere on your own risk.
 - This is not an advice, nor a financial advice.
-- Feedback and donations are more then welcome.
+- Feedback, suggenstions and donations are more then welcome.
 - I like drinking beer.
 
 ### prerequirements
