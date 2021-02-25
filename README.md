@@ -1,5 +1,5 @@
 ## In general
-You might find it usefull to install a ***packagename app*** to simplify searching packagenames in your *adventures journey* to debloat your phone.
+You might find it usefull to install a ***packagename app*** to simplify searching **packagenames** in your *adventures journey* to debloat your phone.
 You can find them in one of your favorite playstores.
 
 ## how 2 ...
