@@ -1,9 +1,5 @@
 ## bloatware list Samsung S21
 
-### In general
-You might find it usefull to install a ***packagename app*** to simplify searching packagenames in your adventures journey to debloat your phone.
-You can find them in one of your favorite playstores.
-
 ### prerequirements
 1.  `adb` is installed.
 2.  Phone is enabled in *develop settings*.
