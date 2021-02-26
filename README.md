@@ -37,7 +37,7 @@ This will print a list only 3rd party (or non-system) packages.
 
 ## :hankey: Possible Errors :hankey:
 ### unauthorized device
-If you see an error like this.
+If you see an error like this:
 
 ![](images/device_unauthorized.JPG)
 
