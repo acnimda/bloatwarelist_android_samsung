@@ -2,6 +2,14 @@
 You might find it usefull to install a ***packagename app*** to simplify searching **packagenames** in your *adventures journey* to debloat your phone.
 You can find them in one of your favorite playstores.
 
+### in general
+Doing some research about a *package* before you deletion is advised.
+This is a first prevention of headaches and :scream:
+
+Therefore look in the [playstore](https://play.google.com/store/search?q=samsung) or [here](https://en.uptodown.com/android/general-android) for more app details.
+You can simplify a search by adding the *packagename* directly after `id=`
+`https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser`
+
 ## Some of my best practices
 
 ### prerequirements
