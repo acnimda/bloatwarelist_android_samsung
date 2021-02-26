@@ -17,7 +17,18 @@ You want to debloat your *brand new* android phone, without reading the README f
 - :green_book: If you have questions, read the README first :green_book:
 - Feedback, suggesstions and donations are more then welcome.
 
-## packages sort
+## packages sort by group
+
+### samsung
+Click on the :link: for more details.
+| What / why     | how                                                              |
+|:--------------:|:----------------------------------------------------------------:|
+| :link:[upday](https://play.google.com/store/apps/details?id=de.axelspringer.yana.zeropage&hl=en_US&gl=US)      |`adb shell pm uninstall --user 0 de.axelspringer.yana.zeropage`   |
+| **car mode**     |`adb shell pm uninstall --user 0 com.samsung.android.drivelink.stub`   |
+
+
+
+
 
 ### facebook
 1. Run `adb shell pm list packages | grep facebook`
@@ -30,6 +41,7 @@ If, somehow, you want to keep data and cache of the **package** add  `-k`, this 
 adb shell pm uninstall --user 0 com.facebook.system
 adb shell pm uninstall --user 0 com.facebook.appmanager
 adb shell pm uninstall --user 0 com.facebook.services
+adb shell pm uninstall --user 0 com.facebook.katana
 ```
 #### Note2:
 Due to your region, some packages might prevented from uninstalling. You can disable them instead. Use following command on `adb shell`:
