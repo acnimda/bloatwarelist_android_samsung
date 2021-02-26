@@ -14,7 +14,7 @@ You can find them in one of your favorite playstores.
 adb devices
 ```
 2. accept *access* on your device.
-3. Look [here](bloadwarelist_21.md) for more in debt commands.
+3. Look [here](bloadwarelist_S21.md) for more in debt commands.
 4. When you are finished close the `adb server` by running `adb kill-server`.
 
 ## how 2 ...
