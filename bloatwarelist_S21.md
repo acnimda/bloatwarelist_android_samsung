@@ -10,12 +10,12 @@ You want to debloat your *brand new* android phone, without reading the README f
 2.  Phone is enabled in *develop settings*.
 3. *usb-debugging* is enabled.
 
-### NOTE:
+### NOTE :bowtie::
 - Use of this bloatwarelist is always and everywhere on your own risk.
 - :warning: This is not an advice, nor a financial advice! :warning:
 - Feedback, suggesstions and donations are more then welcome.
 - I like drinking :beer:.
-- :green_book: If you have questions, read the README first :bowtie:
+- :green_book: If you have questions, read the README first :green_book:
 
 ## packages sort
 
