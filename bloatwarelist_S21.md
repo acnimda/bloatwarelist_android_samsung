@@ -20,11 +20,16 @@ You want to debloat your *brand new* android phone, without reading the README f
 ## packages sort by group
 
 ### samsung
-Click on the :link: for more details.
+Click on a :link: for more details.
 | What / why     | how                                                              |
 |:--------------:|:----------------------------------------------------------------:|
-| :link:[upday](https://play.google.com/store/apps/details?id=de.axelspringer.yana.zeropage&hl=en_US&gl=US)      |`adb shell pm uninstall --user 0 de.axelspringer.yana.zeropage`   |
+| [Samsung browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser&gl=NL) | `adb shell pm uninstall --user 0 com.sec.android.app.sbrowser` |
+| [upday](https://play.google.com/store/apps/details?id=de.axelspringer.yana.zeropage&hl=en_US&gl=US)      |`adb shell pm uninstall --user 0 de.axelspringer.yana.zeropage`   |
 | **car mode**     |`adb shell pm uninstall --user 0 com.samsung.android.drivelink.stub`   |
+|[Samsung Notes](https://play.google.com/store/apps/details?id=com.samsung.android.app.notes&hl=nl&gl=US)  | `adb shell pm uninstall --user 0 com.samsung.android.app.notes`   |
+| **Samsung Notes addons**  | `adb shell pm uninstall --user 0 com.samsung.android.app.notes.addons` |
+| [Smart Switch](https://play.google.com/store/apps/details?id=com.sec.android.easyMover&hl=en_US&gl=US) | `adb shell pm uninstall --user 0 com.sec.android.easyMover` |
+| **Samsung cloud** | `adb shell pm uninstall --user 0 com.samsung.android.scloud` |
 
 
 
