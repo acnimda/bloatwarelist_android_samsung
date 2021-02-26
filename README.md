@@ -37,8 +37,10 @@ This will print a list only 3rd party (or non-system) packages.
 
 ## :hankey: Possible Errors :hankey:
 ### unauthorized device
-If you see an error like this. 
+If you see an error like this.
+
 ![](images/device_unauthorized.JPG)
+
 It's most likely you didn't accept your computer authorization on your device.
 1. Click *"Revoke USB debugging authorizations"*
 2. Run `adb devices`
