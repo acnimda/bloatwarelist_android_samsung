@@ -13,9 +13,9 @@ You want to debloat your *brand new* android phone, without reading the README f
 ### NOTE :bowtie::
 - Use of this bloatwarelist is always and everywhere on your own risk.
 - :warning: This is not an advice, nor a financial advice! :warning:
-- I like drinking :beer:.
 - :green_book: If you have questions, read the README first :green_book:
 - Feedback, suggesstions and donations are more then welcome.
+- Most importantly I like drinking :beer:
 
 ## packages sort by group
 Click on a :link: for more details.
