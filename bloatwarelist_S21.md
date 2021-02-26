@@ -45,6 +45,11 @@ Click on a :link: for more details.
 | **Samsung Notes addons**  | `adb shell pm uninstall --user 0 com.samsung.android.app.notes.addons` |
 | [Smart Switch](https://play.google.com/store/apps/details?id=com.sec.android.easyMover&hl=en_US&gl=US) | `adb shell pm uninstall --user 0 com.sec.android.easyMover` |
 | **Samsung cloud** | `adb shell pm uninstall --user 0 com.samsung.android.scloud` |
+| **Samsung Free** | `adb shell pm uninstall --user 0 com.samsung.android.app.spage` |
+| [Samsung galaxy friends](https://samsung-galaxy-friends.en.uptodown.com/android) | `adb shell pm uninstall --user 0 com.samsung.android.mateagent` |
+| **Samsung Pass** | `adb shell pm uninstall --user 0 com.samsung.android.samsungpass` |
+
+
 
 
 
