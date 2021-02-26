@@ -15,7 +15,7 @@ You want to debloat your *brand new* android phone, without reading the README f
 - :warning: This is not an advice, nor a financial advice! :warning:
 - :green_book: If you have questions, read the README first :green_book:
 - Feedback, suggesstions and donations are more then welcome.
-- Most importantly I like drinking :beer:
+- Keep always in your mind "*I like drinking* :beer:"
 
 ## packages sort by group
 Click on a :link: for more details.
