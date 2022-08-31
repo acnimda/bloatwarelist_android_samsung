@@ -1,6 +1,3 @@
-##
-klik [hier](https://www.apkmirror.com/apk/alfred-labs-inc/alfred-home-security-camera/alfred-home-security-camera-2022-13-1-release/alfredcamera-home-security-app-2022-13-1-2-android-apk-download/download/?key=67ba5635cf619b72290158c451021c13be269ca3&forcebaseapk=true)
-
 ## Globally :earth_africa:
 You might find it usefull to install a ***packagename app*** to simplify searching **packagenames** in your *adventures journey* to debloat your phone.
 You can find them in one of your favorite playstores.
