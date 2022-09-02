@@ -34,6 +34,15 @@ Click on a :link: for more details.
 - run `adb shell pm list packages | grep messag`
 
 
+## copy an APK to host
+```s
+# make sure a device is running
+adb devices
+# find path
+adb shell pm path com.example.someapp
+adb pull /data/app.com.example.base.apk path/to/destination
+``
+
 ### Samsung
 
 | What / why     | how                                                              |
@@ -75,7 +84,6 @@ adb shell pm disable-user --user 0 com.facebook.system
 adb shell pm disable-user --user 0 com.facebook.services
 adb shell pm disable-user --user 0 com.facebook.appmanager
 ```
-
 
 
 
