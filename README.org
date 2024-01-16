@@ -10,11 +10,10 @@ This is a first prevention of headaches and :scream:
 Therefore look in the [[https://play.google.com/store/search?q=samsung][playstore]]  or on [[https://en.uptodown.com/android/general-android][uptodown]] for more app details.
 You can simplify a search by adding the =packagename= directly after =id==
 example:
-#+begin_src
+#+begin_src bash
 https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser
 #+end_src
 
-** Best practices
 
 *** Requirements
 -  =adb= is installed.
@@ -36,6 +35,7 @@ A_SERIALNUMBER   device
 2. accept *access* on your device.
 3. When you are finished close the =adb server= by running =adb kill-server=.
 
+** Best practices
 *** uninstall a package
 Run =adb uninstall <YOUR_PACKAGE_NAME>= example:
 #+begin_src bash
@@ -90,7 +90,9 @@ adb shell pm uninstall --user 0 <YOUR_PACKAGE_NAME>
 
 *** unauthorized device
 If you see an error like this:
+
 [[./images/device_unauthorized.JPG]]
+
 It's most likely you didn't accept your computer authorization on your device.
 1. Click *"Revoke USB debugging authorizations"*
 2. Run =adb devices=
