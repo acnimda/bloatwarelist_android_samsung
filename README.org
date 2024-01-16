@@ -39,11 +39,32 @@ A_SERIALNUMBER   device
 *** uninstall a package
 Run =adb uninstall <YOUR_PACKAGE_NAME>= example:
 #+begin_src bash
-adb unintall com.someting.pkg
+adb uninstall com.someting.pkg
 #+end_src
 
 You know you did the right thing if it returns with a *succes* message.
 
+If, somehow, you want to keep data and cache of the *package* add  =-k=.
+#+begin_src bash
+adb uninstall -k com.someting.pkg
+#+end_src
+
+*** note!:
+Due to your region, some packages might prevented from uninstalling. You can disable them instead. Use following command on =adb shell=:
+#+begin_src bash
+adb shell pm disable-user --user 0 com.facebook.system
+adb shell pm disable-user --user 0 com.facebook.services
+adb shell pm disable-user --user 0 com.facebook.appmanager
+#+end_src
+
+*** uninstall facebook
+#+begin_src bash
+adb shell pm list packages | grep facebook
+adb shell pm uninstall --user 0 com.facebook.system
+adb shell pm uninstall --user 0 com.facebook.appmanager
+adb shell pm uninstall --user 0 com.facebook.services
+adb shell pm uninstall --user 0 com.facebook.katana
+#+end_src
 
 ** how 2 ...
 *** find packages
@@ -72,7 +93,14 @@ adb shell pm list packages -d
 #+begin_src bash
 adb shell pm list packages -f
 #+end_src
+*** copy an APK to host
+find the path and pull the =base.apk= to your host:
+#+begin_src bash
+adb shell pm list packages -f
+abd shell pm path com.example.someapp
+adb pull /data/app.com.example.base.apk path/to/destination
 
+#+end_src
 **  :hankey: Possible Errors
 
 
