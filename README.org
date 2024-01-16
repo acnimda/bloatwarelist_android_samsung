@@ -1,5 +1,5 @@
 #+title: README
-** Globally
+** :earth_africa: Globally
 You might find it usefull to install a =packagename app= to simplify searching =packagenames= in your *adventures journey* to debloat your phone.
 You can find them in one of your favorite playstores.
 
@@ -81,8 +81,7 @@ Some packages can't be uninstalled by an user.
 You might see this error:
 
 #+attr_html: :alt  :align left :class img
-[[images/delete_failed_internal_error.JPG][delete failed internal error]]
-
+[[./images/delete_failed_internal_error.JPG][delete failed internal error]]
 
 Run:
 #+begin_src bash
@@ -93,8 +92,7 @@ adb shell pm uninstall --user 0 <YOUR_PACKAGE_NAME>
 *** unauthorized device
 If you see an error like this:
 #+attr_html: :alt  :align left :class img
-[[images/device_unauthorized.JPG][device unauthorized]]
-
+[[./images/device_unauthorized.JPG][device unauthorized]]
 
 It's most likely you didn't accept your computer authorization on your device.
 1. Click *"Revoke USB debugging authorizations"*
