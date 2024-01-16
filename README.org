@@ -1,77 +1,102 @@
 #+title: README
-** Globally :earth_africa:
+** Globally
 You might find it usefull to install a =packagename app= to simplify searching =packagenames= in your *adventures journey* to debloat your phone.
 You can find them in one of your favorite playstores.
 
-### in general
-Doing some research about a *package* before you deletion is advised.
+**  General
+Doing some research about a =package= before you deletion is advised.
 This is a first prevention of headaches and :scream:
 
-Therefore look in the [playstore](https://play.google.com/store/search?q=samsung) or [here](https://en.uptodown.com/android/general-android) for more app details.
-You can simplify a search by adding the *packagename* directly after `id=`
-`https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser`
+Therefore look in the [[https://play.google.com/store/search?q=samsung][playstore]]  or on [[https://en.uptodown.com/android/general-android][uptodown]] for more app details.
+You can simplify a search by adding the =packagename= directly after =id==
+example:
+#+begin_src
+https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser
+#+end_src
 
-## Some of my best practices
+** Best practices
 
-### prerequirements
--  `adb` is installed.
+*** Requirements
+-  =adb= is installed.
 -  Phone is enabled in *develop settings*.
 - *usb-debugging* is enabled.
 
-1. start an `adb server`
-```s
+1. start an =adb server=:
+#+begin_src bash
+adb start-server
 adb devices
-```
+
+#+end_src
+a successful connection will look like this:
+#+begin_src bash
+List of devices attached
+A_SERIALNUMBER   device
+#+end_src
+
 2. accept *access* on your device.
-3. Look [here](bloatwarelist_S21.md) for more in debt commands.
-4. When you are finished close the `adb server` by running `adb kill-server`.
+3. When you are finished close the =adb server= by running =adb kill-server=.
 
-### uninstall a package
-Run `adb uninstall <YOUR_PACKAGE_NAME>`
-example:
-```s
-adb uninstall com.csdroid.pkg
-```
-You know you did the right thing if it returns with a `succes` message.
+*** uninstall a package
+Run =adb uninstall <YOUR_PACKAGE_NAME>= example:
+#+begin_src bash
+adb unintall com.someting.pkg
+#+end_src
+
+You know you did the right thing if it returns with a *succes* message.
 
 
-## how 2 ...
-### find packages
-When you modified `<YOUR_PACKAGE_NAME>` to your likings.
-- Run `adb shell pm list packages | grep <YOUR_PACKAGE_NAME>`
-
-### find system packages
+** how 2 ...
+*** find packages
+#+begin_src
+adb shell pm list packages | grep <YOUR_PACKAGE_NAME>
+#+end_src
+*** find system packages
 This will print a list only for system packages.
-- Run `adb shell pm list packages -s`
-### find 3rd party packages
+#+begin_src bash
+adb shell pm list packages -s
+#+end_src
+*** find 3rd party packages
 This will print a list only 3rd party (or non-system) packages.
-- Run `adb shell pm list packages -3`
-### find enabled packages
-- Run `adb shell pm list packages -e`
-### find disabled packages
-- Run `adb shell pm list packages -d`
-### find path to the installed APK files
-- Run `adb shell pm list packages -f`
+#+begin_src bash
+adb shell pm list packages -3
+#+end_src
+*** find enabled packages
+#+begin_src bash
+adb shell pm list packages -e
+#+end_src
+*** find disabled packages
+#+begin_src
+adb shell pm list packages -d
+#+end_src
+*** find path to the installed APK files
+#+begin_src bash
+adb shell pm list packages -f
+#+end_src
 
-## :hankey: Possible Errors :hankey:
+**  :hankey: Possible Errors
 
-### Package delete failed
+
+*** Package delete failed
 Some packages can't be uninstalled by an user.
 You might see this error:
 
-![](images/delete_failed_internal_error.JPG)
+#+attr_html: :alt  :align left :class img
+[[images/delete_failed_internal_error.JPG][delete failed internal error]]
 
-Run `adb shell pm uninstall --user 0 <YOUR_PACKAGE_NAME>`
+
+Run:
+#+begin_src bash
+adb shell pm uninstall --user 0 <YOUR_PACKAGE_NAME>
+#+end_src
 
 
-### unauthorized device
+*** unauthorized device
 If you see an error like this:
+#+attr_html: :alt  :align left :class img
+[[images/device_unauthorized.JPG][device unauthorized]]
 
-![](images/device_unauthorized.JPG)
 
 It's most likely you didn't accept your computer authorization on your device.
 1. Click *"Revoke USB debugging authorizations"*
-2. Run `adb devices`
-3. Click `accept` on your device.
-
-
+2. Run =adb devices=
+3. Click *accept* on your device.
