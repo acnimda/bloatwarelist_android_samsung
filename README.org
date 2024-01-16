@@ -47,7 +47,7 @@ You know you did the right thing if it returns with a *succes* message.
 
 ** how 2 ...
 *** find packages
-#+begin_src
+#+begin_src bash
 adb shell pm list packages | grep <YOUR_PACKAGE_NAME>
 #+end_src
 *** find system packages
@@ -65,7 +65,7 @@ adb shell pm list packages -3
 adb shell pm list packages -e
 #+end_src
 *** find disabled packages
-#+begin_src
+#+begin_src bash
 adb shell pm list packages -d
 #+end_src
 *** find path to the installed APK files
@@ -80,7 +80,7 @@ adb shell pm list packages -f
 Some packages can't be uninstalled by an user.
 You might see this error:
 
-[[./images/delete_failed_internal_error.JPG][delete failed internal error]]
+[[./images/delete_failed_internal_error.JPG]]
 
 Run:
 #+begin_src bash
@@ -89,8 +89,8 @@ adb shell pm uninstall --user 0 <YOUR_PACKAGE_NAME>
 
 
 *** unauthorized device
-If you see an error like this:
-[[./images/device_unauthorized.JPG][device unauthorized]]
+If you see an error like this:[[
+./images/device_unauthorized.JPG]]
 
 It's most likely you didn't accept your computer authorization on your device.
 1. Click *"Revoke USB debugging authorizations"*
